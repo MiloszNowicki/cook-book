@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: MiloszNowicki/netlify_base
+  repo: MiloszNowicki/cook-book
 media_folder: static/assets
 
 collections:
