@@ -9,8 +9,12 @@ const ListLink = props =>
     </li>
 
 export default ({ children }) =>
-    <div style={{height:`100%`}}>
-        <div style={{ height: '25%', margin: `0 auto`, maxWidth: 650, padding: `1.25rem 1rem` }}>
+    <div style={{     minHeight: '800px',
+        display: 'flex',
+        flexFlow: 'column',
+        flexWrap: 'nowrap',
+        justifyContent: 'center' }}>
+        <div style={{ minHeight: '25%', margin: `0 auto`, maxWidth: 650, padding: `1.25rem 1rem` }}>
             <header style={{ marginBottom: `1.5rem` }}>
                 <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
                     <h3 style={{ display: `inline` }}>Amazing Cookbok!</h3>
@@ -21,11 +25,11 @@ export default ({ children }) =>
                     <ListLink to="/">Cooking</ListLink>
                 </ul>
             </header>
-            <div style={{height: '50%',}}>
+            <div style={{minHeight: '50%',}}>
                 {children()}
             </div>
         </div>
-        <div style={{ height: '25%', margin: `0 auto`, maxWidth: 650, padding: `1.25rem 1rem` }}>
+        <div style={{ minHeight: '25%', margin: `0 auto`, maxWidth: 650, padding: `1.25rem 1rem` }}>
             <h3>footer</h3>
         </div>
     </div>
