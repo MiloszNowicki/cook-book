@@ -9,21 +9,23 @@ const ListLink = props =>
     </li>
 
 export default ({ children }) =>
-    <div>
-        <div style={{ margin: `0 auto`, maxWidth: 650, padding: `1.25rem 1rem` }}>
+    <div style={{height:`100%`}}>
+        <div style={{ height: '25%', margin: `0 auto`, maxWidth: 650, padding: `1.25rem 1rem` }}>
             <header style={{ marginBottom: `1.5rem` }}>
                 <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
-                    <h3 style={{ display: `inline` }}>MySweetSite</h3>
+                    <h3 style={{ display: `inline` }}>Amazing Cookbok!</h3>
                 </Link>
                 <ul style={{ listStyle: `none`, float: `right` }}>
-                    <ListLink to="/">Home</ListLink>
-                    <ListLink to="/">About</ListLink>
-                    <ListLink to="/">Contact</ListLink>
+                    <ListLink to="/">Cooking</ListLink>
+                    <ListLink to="/">Cooking</ListLink>
+                    <ListLink to="/">Cooking</ListLink>
                 </ul>
             </header>
-            {children()}
+            <div style={{height: '50%',}}>
+                {children()}
+            </div>
         </div>
-        <div style={{ margin: `0 auto`, maxWidth: 650, padding: `1.25rem 1rem` }}>
+        <div style={{ height: '25%', margin: `0 auto`, maxWidth: 650, padding: `1.25rem 1rem` }}>
             <h3>footer</h3>
         </div>
     </div>
